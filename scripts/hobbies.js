@@ -9,7 +9,7 @@ hobbyList = {
 	Drones: ["drone.png", "drones"],
 	Reading: ["reading.png", "reading"],
 	"3D Design": ["3d.png", "3d design"],
-	MUN: ["MUN.png", "mun"],
+	MUN: ["mun.png", "mun"],
 	Swimming: ["swimming.png", "swimming"],
 };
 

@@ -17,7 +17,7 @@ scoreList = {
 	"TOEFL iBT": [
 		"104",
 		"Listening: 29, Reading: 29, Speaking: 25, Writing: 21",
-		"June 2022",
+		"June 2023",
 	],
 	"AP Calculus BC": [
 		"5",

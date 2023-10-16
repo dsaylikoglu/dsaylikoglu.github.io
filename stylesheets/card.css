@@ -1,0 +1,68 @@
+.project-list,
+.volunteering-list,
+.extracurrricular-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.project-list:last-child,
+.volunteering-list:last-child,
+.extracurrricular-list:last-child {
+  margin-bottom: 2rem;
+}
+
+.card {
+  display: flex;
+  color: var(--main);
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 60vw;
+  margin-bottom: 1.5rem;
+}
+.card-image {
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 4rem;
+  box-shadow: 3px 3px 6px 3px black;
+  object-fit: cover;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+}
+.card-title {
+  font-size: larger;
+  font-weight: 800;
+  text-decoration: underline var(--primary) 2px;
+  margin-bottom: 0.5rem;
+}
+.card-description,
+.card-language,
+.hierarchy {
+  margin: 0.5rem 0;
+}
+.card-url {
+  text-decoration: underline var(--primary);
+  color: #a0a0a0;
+  cursor: pointer;
+}
+.volunteering-image,
+.extracurricular-image {
+  width: 10rem !important;
+  aspect-ratio: 1/1;
+}
+.volunteering-card,
+.extracurrricular-card {
+  width: 50vw !important;
+}
+
+#volunteer:after,
+#proyekt:after,
+#extracurric:after {
+  width: 100%;
+}

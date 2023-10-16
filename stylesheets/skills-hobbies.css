@@ -1,0 +1,83 @@
+main {
+	width: 65%;
+	color: var(--main);
+	margin-bottom: 1.5rem;
+}
+
+.language-images-grid {
+	position: relative;
+	width: 50%;
+	display: grid;
+	grid-template-columns: repeat(3, 4fr);
+	cursor: pointer;
+}
+.hobby-images-grid {
+	position: relative;
+	width: 95%;
+	display: grid;
+	grid-template-columns: repeat(6, 0.67fr);
+	cursor: pointer;
+}
+.language-images-grid img {
+	box-shadow: 0 0 6px 1px black;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	filter: none;
+}
+.hobby-images-grid img {
+	box-shadow: 0 0 6px 1px black;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	filter: none;
+}
+.lang,
+.hobby {
+	text-align: center;
+	transition: filter 0.3s ease-in-out;
+}
+.hobby {
+	filter: brightness(96%);
+}
+.lang-level {
+	transform: translate(0, -275%);
+}
+.hobby-name {
+	transform: translate(0, -475%);
+}
+.lang-level,
+.hobby-name {
+	font-weight: 900;
+	font-size: large;
+	background: transparent;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+.lang:hover > img,
+.hobby:hover > img {
+	filter: blur(3px) brightness(0.55);
+}
+.lang:hover > .lang-level,
+.hobby:hover > .hobby-name {
+	opacity: 1;
+}
+
+.interests,
+.prog-lang-list {
+	font-size: larger;
+}
+.prog-lang-card {
+	border-left: 4px solid var(--primary);
+	padding-left: 1rem;
+	margin-bottom: 0.75rem;
+}
+.prog-lang-list:last-child {
+	margin-bottom: 0 !important;
+}
+
+a[href^="skills-hobbies.html"]:after {
+	width: 100%;
+}

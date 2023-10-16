@@ -1,0 +1,52 @@
+main {
+	width: 65%;
+	color: var(--main);
+	display: grid;
+	grid-template-columns: 1.75fr 0.5fr 1.75fr;
+}
+
+.comp,
+.award {
+	border-left: 4px solid var(--primary);
+	padding-left: 1rem;
+	margin-bottom: 2rem;
+}
+.award {
+	border-bottom: 4px solid var(--primary);
+	padding-bottom: 0.5rem;
+}
+.comp-title,
+.award-main-title {
+	display: inline-block; /* To make a block of text only as wide as it needs to be to fit the content use "DISPLAY: INLINE-BLOCK*/
+	font-size: 115%;
+	font-weight: bolder;
+	text-decoration: underline var(--primary) 2px;
+	margin-bottom: 0.5rem;
+}
+.comp-title > a,
+#programming-title {
+	color: whitesmoke;
+	text-decoration: underline var(--primary) 2px;
+	display: inline-block;
+	margin: 0.25rem 0 0.5rem 0;
+}
+.comp-title:hover > a {
+	color: #a0a0a0;
+}
+.comp-date,
+.award-date {
+	margin: 10rem 0;
+}
+.comp-description {
+	margin-top: 0.75rem;
+}
+.each-comp {
+	margin-top: 0.5rem !important;
+}
+.each-comp:first-child {
+	margin-top: 0rem !important;
+}
+
+a[href^="competitions.html"]:after {
+	width: 100%;
+}

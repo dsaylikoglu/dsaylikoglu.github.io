@@ -1,0 +1,37 @@
+main {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 65%;
+}
+
+.program-list {
+	color: var(--main);
+}
+.program-card {
+	border-left: 4px solid var(--primary);
+	padding-left: 1rem;
+	margin-bottom: 2rem;
+}
+.program-title {
+	display: inline-block; /* To make a block of text only as wide as it needs to be to fit the content use "DISPLAY: INLINE-BLOCK*/
+	font-size: 115%;
+	font-weight: bolder;
+	margin-bottom: 0.5rem;
+}
+.program-title:hover > a {
+	color: #a0a0a0;
+}
+.program-title > a {
+	color: var(--main);
+	text-decoration: underline var(--primary) 2px;
+	display: inline-block;
+}
+.program-description,
+.program-date {
+	margin: 0.5rem 0;
+}
+
+a[href^="attended-programs.html"]:after {
+	width: 100%;
+}

@@ -1,0 +1,57 @@
+main {
+	display: grid;
+	grid-template-columns: 1.5fr 0.1fr 2.4fr;
+	color: var(--main);
+	padding: 1rem;
+	border-radius: 10px;
+	border: 1px solid white;
+	width: 65%;
+	height: 100%;
+}
+
+.suii {
+	height: 100%;
+	width: 100%;
+	display: inline-grid;
+	justify-content: center;
+	align-content: center;
+}
+.profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.profile-image {
+	border-radius: 50%;
+	margin-bottom: 1rem;
+	width: 60%;
+}
+
+.vdivider {
+	border-left: 6px solid var(--primary);
+	height: 100%;
+	margin-right: 10rem;
+}
+
+.contact-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 2%;
+}
+.contact-list h2 {
+	text-decoration: underline var(--primary) 2px;
+}
+.contact-list a,
+.addresses {
+	text-decoration: underline;
+	color: var(--main);
+}
+.contact-list :not(h2) {
+	font-size: 0.9;
+}
+
+a[href^="contact.html"]:after {
+	width: 100%;
+}
